@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav aria-labelledby="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#audio"> < Audio > </Audio></a>
+                </li>
+
+                <li>
+                    <a href="#video"> < Video > </a>
+                </li>
+
+                <li>
+                    <a href="#iframe"> < iFrame ></a>
+                </li>
+
+                <li>
+                    <a href="#embed"> < Embed > </a>
+                </li>
+
+                <li>
+                    <a href="#source"> < Source ></a>
+                </li>
+
+                <li>
+                    <a href="#track"> < Track > </a>
+                </li>
+
+                <li>
+                    <a href="#picture"> < Picture > </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="audio">
+            <Section>
+                <h1><em>My Favorite Music</em></h1>
+                <p>Listen to a song that inspires me daily.</p>          
+                <audio src="Asset/audios/ALAWIYE ORIN IYIN - Copy.mp3" controls></audio>
+            </Section>
+        </article>
+
+        <article id="Video">
+            <Section>
+                <h1><em>Video Element</em></h1>
+                <video src="Asset/videos/video-1.mp4" controls></video>
+            </Section>
+        </article>
+
+        <article id="iFrame">
+            <section>
+                <h2>My Favorite Place</h2>
+                <p>Here’s an embedded map of my favorite place on Earth.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253631.05165957104!2d3.223290665374823!3d6.648757675603491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc0dbc2592a39%3A0x516e784fdf3f3751!2sThe%20Redeemed%20Christian%20Church%20Of%20God%20Redemption%20Camp%20Arena!5e0!3m2!1sen!2sng!4v1736180355430!5m2!1sen!2sng" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+        </article>
+
+        <article id="embed">
+            <Section>
+                <h1><em>My inspiration Video</em></h1>
+                <p>I recommend that you watch this video</p>
+                <embed
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/tinRsVNnyh0?si=RSw_P5D5oMwt9D8z" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen />
+            </Section>
+        </article>
+        
+        <article id="source">
+            <Section>
+                <h1><em>Recommended Video</em></h1>
+                <p>I watched this video and felt you might also enjoy watching it.</p>
+                <video controls>
+                    <source
+                    src="Asset/videos/video-2.mp4"/>
+                </video>
+            </Section>
+        </article>
+        
+        <!--<article id="track">
+            <Section>
+                <h1><em>Track Elements</em></h1>
+                <video controls>
+                    <source
+                    src="Asset/videos/The-Killer-360P.mp4" type="video/mp4"/>
+                    <track src="Asset/subtitles/The.Killer.2024.PCOK.WEB.H264-TastefulStirringGharialOfCompetition.en[sdh].srt"  kind="subtitle" srclang="en" label="English"/>
+                </video>
+            </Section>
+            <h1>Video with Subtitles</h1>
+    <video controls width="640">
+        <source src="Asset/videos/The-Killer-360P.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <track src="Asset/Subtitles/The.Killer.2024.PCOK.WEB.H264-TastefulStirringGharialOfCompetition.en[sdh].srt" kind="subtitles" srclang="en" label="English">
+        <track src="subtitles-fr.vtt" kind="subtitles" srclang="fr" label="French">
+        Your browser does not support the video tag.
+    </video>
+        </article>-->
+        
+        <article id="picture">
+            <Section>
+                <h2>My Image</h2>
+                <p>Here’s a  photo of me,</p>
+                <picture>
+                    <source srcset="Asset/images/My-Image-1.jpg" media="(min-width: 1024px)"/>
+                    <source srcset="Asset/images/My-Image-2.jpg" media="(min-width: 900px)"/>
+                    <source srcset="Asset/images/My-Image-3jpg" media="(min-width: 767px)"/>
+                    <img src="Asset/images/My-image-1.jpg" />
+                </picture>
+            </Section>
+        </article>
+        
+        
+
+    </main>
+</body>
+</html>

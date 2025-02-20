@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="form.css" rel="stylesheet" />
+    <title>ALTschool Application Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Application Form</h1>
+      <nav>
+        <ul>
+          <li><a href="bio.html">Home </a></li>
+          <li><a href="form.html">Application Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="#" method="post">
+        <!--Full Name-->
+        <label for="full-name">First Name:</label>
+        <br />
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="Enter Your first-name"
+          required
+        />
+        <br />
+        <br />
+        <label for="last-name">Last Name</label>
+        <br />
+
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="Enter your last name"
+          required
+        />
+        <br />
+        <br />
+        <label for="gender">Gender</label>
+        <br />
+        <select id="gender" name="gender" required>
+          <option value="">Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <br />
+        <label for="date-of-birth">Date of Birth</label>
+        <br />
+        <input type="date" id="date-of-birth" name="date-of-birth" required />
+        <br />
+        <br />
+        <label for="email">Email Address</label>
+        <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <br />
+        <br />
+        <label for="phone">Phone Number</label>
+        <br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+          required
+        />
+        <br />
+        <br />
+        <label for="country">Country</label>
+        <br />
+        <select id="country" name="country" required>
+          <option value="">Select your country</option>
+          <option value="US">United States</option>
+          <option value="GB">United Kingdom</option>
+          <option value="CA">Canada</option>
+          <option value="AU">Australia</option>
+          <option value="NG">Nigeria</option>
+          <option value="IN">India</option>
+          <option value="ZA">South Africa</option>
+          <option value="AG">Argentina</option>
+          <option value="BD">Bangladesh</option>
+          <option value="BJ">Benin</option>
+          <option value="CN">China</option>
+          <option value="DE">Germany</option>
+        </select>
+        <br />
+        <br />
+        <label for="state">State/City Of Residents</label>
+        <br />
+        <input
+          type="text"
+          id="state"
+          name="state"
+          placeholder="Enter your state of resident"
+          required
+        />
+        <br />
+        <br />
+        <label for="how-did-you-know-about-us"
+          >How did you know about us?</label
+        >
+        <br />
+        <select
+          id="how-did-you-know-about-us"
+          name="how-did-you-know-about-us"
+          required
+        >
+          <option value="">Select Channel</option>
+          <option value="Whatsapp">Whatsapp</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Twitter">Twitter</option>
+          <option value="instagram">Instagram</option>
+          <option value="linkedin">Linkedin</option>
+          <option value="friend">Friend</option>
+          <option value="bill-board">Bill Board</option>
+          <option value="youtube">Youtube</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <br />
+        <label for="password">Password</label>
+        <br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Create a password"
+          required
+        />
+        <br />
+        <br />
+        <label for="confirm-password">Confirm Password</label>
+        <br />
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="Confirm your password"
+          required
+        />
+        <br />
+        <br />
+        <label for="confirm-password">How did you heard about us?</label>
+        <input 
+            type="text"
+            id="how-did-you-know-about-us"
+            name="how-did-you-know-about-us"
+            placeholder="Optional: Let us know how you found us"
+            required="false"
+        />
+        <p>
+          By clicking continue, I agree to
+          <a href="https://www.altschoolafrica.com/terms-and-conditions"
+            >Terms of use</a
+          >
+          and acknowledge that I have read the
+          <a href="https://altschoolafrica.com/terms-and-conditions"
+            >Privacy Policy</a
+          >.
+        </p>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+
+      <p><a href="#top">Back to Top</a></p>
+
+      <footer>
+        <address>10, Paradise Street,Odoguyan, Ikorodu,Lagaos State</address>
+        <p>&copy;2024 Olawale Akinbileje Emmanuel. All right reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>

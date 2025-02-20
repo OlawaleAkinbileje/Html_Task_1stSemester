@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Powerful Media Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My World</h1>
+    <p>A little about me, powered by media!</p>
+  </header>
+
+  <main>
+    <!-- Picture Element -->
+    <section>
+      <h2>Visual Storytelling</h2>
+      <p>Here’s a dynamic photo of me, optimized for different devices.</p>
+      <picture>
+        <source srcset="Asset/images/My-Image-1.jpg" media="(min-width: 1024px)">
+        <source srcset="Asset/images/My-Image-2.jpg" media="(min-width: 768px)">
+        <source srcset="Asset/images/My-Image-3.jpg" media="(max-width: 767px)">
+        <img src="Asset/images/My-Image-2" alt="A vibrant picture of me standing in front of a scenic background">
+      </picture>
+    </section>
+
+    <!-- Video Element -->
+    <section>
+      <h2>A Glimpse of My Journey</h2>
+      <p>Watch a short video about my life and achievements.</p>
+      <video controls>
+        <source src="media/my-journey.mp4" type="video/mp4">
+        <source src="media/my-journey.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Audio Element -->
+    <section>
+      <h2>My Favorite Music</h2>
+      <p>Listen to a song that inspires me daily.</p>
+      <audio controls>
+        <source src="media/inspiring-song.mp3" type="audio/mpeg">
+        <source src="media/inspiring-song.ogg" type="audio/ogg">
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+
+    <!-- iframe Element -->
+    <section>
+      <h2>My Favorite Place</h2>
+      <p>Here’s an embedded map of my favorite place on Earth.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253631.05165957104!2d3.223290665374823!3d6.648757675603491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc0dbc2592a39%3A0x516e784fdf3f3751!2sThe%20Redeemed%20Christian%20Church%20Of%20God%20Redemption%20Camp%20Arena!5e0!3m2!1sen!2sng!4v1736180355430!5m2!1sen!2sng" 
+      width="600" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Image -->
+    <section>
+      <h2>Memorable Moments</h2>
+      <p>A snapshot of a cherished memory.</p>
+      <img src="images/memorable-moment.jpg" alt="A cherished moment with family and friends">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Profile. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
