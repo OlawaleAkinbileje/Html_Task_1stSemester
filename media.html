@@ -4,6 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            
+            background-color: rgb(245, 230, 200, 1);
+        }
+
+        header {
+            background-color: rgb(136, 138, 82, 1);
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(44, 37, 10, 1);
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color:  rgb(129, 132, 47, 1);
+        }
+
+
+        article {
+            background-color: rgb(255, 230, 210, 1);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            margin-bottom: 15px;
+        }
+
+        em {
+            color: rgb(129, 132, 47, 1);
+        }
+
+        p {
+            color: rgb(44, 37, 10, 1);
+            margin-bottom: 20px;
+        }
+
+
+        audio, video, iframe, embed {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+
+        picture {
+            display: block;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+        }
+
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            article {
+                padding: 20px;
+            }
+
+            iframe, embed {
+                height: 300px;
+            }
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -36,6 +141,10 @@
                 <li>
                     <a href="#picture"> < Picture > </a>
                 </li>
+
+                <li>
+                    <a href="/HTML_ASS/bio.html"> < Bio Page > </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -57,7 +166,7 @@
 
         <article id="iFrame">
             <section>
-                <h2>My Favorite Place</h2>
+                <h1><em>My Favorite Place</em></h1>
                 <p>Here’s an embedded map of my favorite place on Earth.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253631.05165957104!2d3.223290665374823!3d6.648757675603491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc0dbc2592a39%3A0x516e784fdf3f3751!2sThe%20Redeemed%20Christian%20Church%20Of%20God%20Redemption%20Camp%20Arena!5e0!3m2!1sen!2sng!4v1736180355430!5m2!1sen!2sng" 
                 width="600" 
@@ -118,7 +227,7 @@
         
         <article id="picture">
             <Section>
-                <h2>My Image</h2>
+                <h1><em>My Image</em></h1>
                 <p>Here’s a  photo of me,</p>
                 <picture>
                     <source srcset="Asset/images/My-Image-1.jpg" media="(min-width: 1024px)"/>
